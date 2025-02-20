@@ -21,6 +21,7 @@ past.*
 past-*
 *.bike
 *.db
+.repo_ignore
 
 .vinxi
 /build/
@@ -32,3 +33,4 @@ past-*
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+app.config.timestamp_*.js
