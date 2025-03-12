@@ -1,6 +1,10 @@
 import type { QueryClient } from "@tanstack/react-query"
-import { Outlet, createRootRouteWithContext } from "@tanstack/react-router"
-import { Meta, Scripts } from "@tanstack/react-start"
+import {
+  HeadContent,
+  Outlet,
+  createRootRouteWithContext,
+  Scripts,
+} from "@tanstack/react-router"
 import * as React from "react"
 import { DefaultCatchBoundary } from "~/components/DefaultCatchBoundary"
 import { NotFound } from "~/components/NotFound"
@@ -70,7 +74,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
   return (
     <html>
       <head>
-        <Meta />
+        <HeadContent />
       </head>
       <body>
         {children}
